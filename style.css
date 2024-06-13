@@ -1,0 +1,286 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+.header {
+  min-height: 55px;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  display: flex;
+  gap: 13px;
+}
+.logo_text {
+  font-size: 20px;
+  color: #2e2e2e;
+}
+.social_net {
+  display: flex;
+  gap: 20px;
+}
+.hero {
+  background-color: #fac960;
+  padding: 92px 0;
+}
+.title {
+  font-size: 44px;
+  line-height: 123%;
+  text-align: center;
+  color: #8a6d2f;
+  margin-bottom: 40px;
+}
+form {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.email {
+  min-height: 55px;
+  background-color: #fff;
+  width: 70%;
+  padding: 15px 40px;
+  font-size: 22px;
+  color: #999999;
+}
+.btn {
+  background-color: #a8863d;
+  color: #fff;
+  max-width: 300px;
+  min-height: 54px;
+  padding: 15px 37px;
+  transition: 0.3s all;
+}
+.btn:hover {
+  transform: scale(1.2);
+  border: 1px solid black;
+}
+.information {
+  background-color: #f2f2f2;
+  padding: 77px 0px 81px 0px;
+}
+.information_title {
+  font-size: 37px;
+  line-height: 97%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.56);
+  margin-bottom: 32px;
+}
+.description {
+  font-size: 23px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 56px;
+}
+.information_img {
+  display: block;
+  margin: 0 auto;
+}
+.mobile {
+  padding-top: 76px;
+  position: relative;
+}
+.mobile_img {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.big_margin {
+  margin-bottom: 350px;
+}
+.friends {
+  padding: 90px 0;
+  background-color: #fac960;
+}
+.mobile_btn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 30px;
+  background-color: #fff;
+  border: 2px solid gray;
+  border-radius: 7px;
+  margin-bottom: 107px;
+  transition: 0.3s all;
+  box-shadow: 7px 7px 7px -3px rgba(91, 93, 95, 0.3);
+}
+.mobile_btn:hover {
+  transform: translateY(-5px);
+}
+.footer {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+.footer_logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.footer_img {
+  display: block;
+  margin: 0 auto;
+}
+.footer_social {
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .container{
+    padding: 0 20px;
+  }
+  .hero_form {
+    max-width: 300px;
+    display: block;
+  }
+  .email{
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .btn{
+    width: 100%;
+  }
+  .title{
+    font-size: 35px;
+  }
+  .information{
+    padding-top: 20px;
+  }
+  .mobile{
+    padding-top: 20px;
+  }
+  .friends{
+    padding-top: 20px;
+  }
+  .footer{
+    padding-top: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1140px) {
+  .container{
+    padding: 0 30px;
+  }
+}
